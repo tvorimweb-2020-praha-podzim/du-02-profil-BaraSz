@@ -1,19 +1,119 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+
+
+body {
+    background-color: #bdc3c7;
+    color: #fff;
+    width: 250px;
+    margin: 3rem 0 0 2rem;
+    box-shadow: black 0.5px 1px 10px;
+}
+
+.obsah {
+    text-align: left;
+    padding: 1rem;
+    
+    }
+
+
+.profil {
+    background-color:#31363b;
+    
+
+}
+
+.foto {
+    width: 250px;
+}
+
+.logo {
+    background-color: #b92e81;
+    border-radius: 50%;
+    position: absolute;
+    left: 205px;
+    top: 190px;
+    box-shadow: black 0.5px 1px 10px;
+
+    
+} 
+
+.jmeno {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: #bdc3c7;
+    
+
+}
+.odkazy {
+   
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+
+.odkazy li {
+    display: inline-block;    
+    
+}
+
+
+.odkazy a {
+    display: inline-block;
+    color: #bdc3c7;
+    text-decoration: none;  
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.portfolio {
+   border: 1px solid #3f464d;
+   border-style: solid none;
+   width: 100%;
+}
+
+/*Tady bych potřebovala poradit, jak to napsat elegantněji - pokud to jde :) Chtěla bych, aby tlačítka zabírala každé 50% šířky, ale nejde mi to. Je mezi nimi nějaká mezera kterou nevím jak odstranit. Ráda bych mezi ně také dala lomítko, ale nevím jak na to. Děkuji */
+
+
+.facebook,
+.twitter {
+    width: 49.25%;
+}
+.portfolio:hover {
+    background-color: #e74c3c;
+}
+  
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.twitter:hover {
+    background-color:#1da1f2;
+}
+
+
+    
+
+
 
 /*
  BARVY
- czechitas  #b92e81
- pozadi     #bdc3c7
- tmava      #31363b
+ czechitas  #b92e81 - logo
+ pozadi     #bdc3c7 - cele stranky
+ tmava      #31363b - pozadi obsahu
  delitka    #3f464d
  portfolio  #e74c3c
  facebook   #3b5998
  twitter    #1da1f2
 */
-
-
-body {
-    background-color: #bdc3c7;
-}
