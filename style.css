@@ -1,11 +1,13 @@
-
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
 
 body {
     background-color: #bdc3c7;
     color: #fff;
     width: 250px;
     margin: 3rem 0 0 2rem;
-    box-shadow: black 0.5px 1px 10px;
+    box-shadow: #31363b 0.5px 1px 10px;
 }
 
 .obsah {
@@ -17,13 +19,13 @@ body {
 
 .profil {
     background-color:#31363b;
-    
+}  
 
-}
+/* Taky bych měla dotaz - když si najedu na webovou stránku a zobrazím zdrojový kód (nevím jistě jestli se tomu tak říká), tak vidím, že mám mezi hlavičkou a samotným obsahem mezeru. Chtěla bych poprosit o radu - kde se tam vzala a jak ji odstranit. Moc děkuji */
 
 .foto {
     width: 250px;
-}
+} 
 
 .logo {
     background-color: #b92e81;
@@ -54,13 +56,14 @@ p {
     padding: 0;
     margin: 0;
     text-align: center;
-    font-size: 15px;
+    font-size: 0px;
     
 }
 
 
 .odkazy li {
-    display: inline-block;    
+    display: inline-block;
+    font-size: 15px;    
     
 }
 
@@ -82,13 +85,19 @@ p {
    width: 100%;
 }
 
-/*Tady bych potřebovala poradit, jak to napsat elegantněji - pokud to jde :) Chtěla bych, aby tlačítka zabírala každé 50% šířky, ale nejde mi to. Je mezi nimi nějaká mezera kterou nevím jak odstranit. Ráda bych mezi ně také dala lomítko, ale nevím jak na to. Děkuji */
+/*Tady bych potřebovala poradit, jak to napsat elegantněji - pokud to jde :) Jde mi o lomítko mezi tlačítky facebook a twitter. Já jsem ho tam přiřadila jako border-right od facebooku, ale asi je na to nějaká lepší metoda? Děkuji */
 
 
-.facebook,
+.facebook {
+            border-right: 1px solid #3f464d;
+            width: 50%;
+        }
 .twitter {
-    width: 49.25%;
-}
+    width: 50%;
+   
+    
+} 
+
 .portfolio:hover {
     background-color: #e74c3c;
 }
